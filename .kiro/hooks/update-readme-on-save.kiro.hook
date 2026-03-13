@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "name": "Update README on Python file save",
+  "description": "Ejecutar script para generar README.md actualizado",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": []
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "python generate_readme.py",
+    "timeout": 30
+  }
+}

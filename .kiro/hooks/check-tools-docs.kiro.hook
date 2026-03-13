@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "name": "Check Tools Documentation",
+  "description": "Verificar docstrings y type hints en tools.py al guardar",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "tools.py"
+    ]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "python validate_tools.py",
+    "timeout": 30
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "name": "Validar Calidad de Tools",
+  "description": "Verifica que cada función decorada con @tool tenga docstring, type hints en parámetros y type hint de retorno",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "tools.py"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Analiza tools.py y verifica que cada función decorada con @tool tenga: (1) docstring descriptivo, (2) type hints en todos los parámetros, (3) type hint en el valor de retorno. Si falta alguno, muestra una advertencia clara indicando qué función necesita corrección y qué le falta específicamente."
+  }
+}

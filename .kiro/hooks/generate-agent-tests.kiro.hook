@@ -1,0 +1,17 @@
+{
+  "enabled": true,
+  "name": "Generate Agent Tests",
+  "description": "Generar pruebas unitarias para agent.py al guardar",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "agent.py"
+    ]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "python generate_tests.py",
+    "timeout": 30
+  }
+}

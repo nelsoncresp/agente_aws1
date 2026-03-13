@@ -26,13 +26,6 @@ Para ejecutar el agente conectado a AWS Bedrock:
 ```bash
 python agent.py
 ```
-
-### Versión Demo (Evidencia)
-Si tienes problemas de cuota o throttling con Bedrock, usa la versión demo para pruebas locales rápidas:
-```bash
-python agent_demo.py
-```
-
 ## Herramientas disponibles
 
 ### estimar_costo_lambda
